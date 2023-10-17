@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useActionData, useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const UpdateCoffee = () => {
@@ -40,7 +40,7 @@ const UpdateCoffee = () => {
         // console.log(newCoffee);
 
         //send to data base .(post in data base )
-        fetch(`http://localhost:5000/coffee/${_id}`,{
+        fetch(`https://coffe-shop-server-ebt87ghli-asif-ahammeds-projects.vercel.app/coffee/${_id}`,{
             method:'PUT',
             headers:{
                 'content-type':'application/json'

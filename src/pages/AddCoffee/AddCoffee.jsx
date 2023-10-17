@@ -29,7 +29,7 @@ const AddCoffee = () => {
         // console.log(newCoffee);
 
         //send to data base .(post in data base )
-        fetch('http://localhost:5000/coffee',{
+        fetch('https://coffe-shop-server-ebt87ghli-asif-ahammeds-projects.vercel.app/coffee',{
             method:'POST',
             headers:{
                 'content-type':'application/json'
